@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springcloud.example.dao.AssetDao">
+    <resultMap id="BaseResultMap" type="com.springcloud.example.entity.Asset">
+        <!--@mbg.generated-->
+        <!--@Table asset-->
+        <id column="asset_id" jdbcType="BIGINT" property="assetId"/>
+        <result column="asset_no" jdbcType="VARCHAR" property="assetNo"/>
+        <result column="borrower" jdbcType="VARCHAR" property="borrower"/>
+        <result column="repayer" jdbcType="VARCHAR" property="repayer"/>
+        <result column="project_code" jdbcType="VARCHAR" property="projectCode"/>
+        <result column="from_system" jdbcType="VARCHAR" property="fromSystem"/>
+        <result column="product_no" jdbcType="VARCHAR" property="productNo"/>
+        <result column="contract_no" jdbcType="VARCHAR" property="contractNo"/>
+        <result column="capital_debt_no" jdbcType="VARCHAR" property="capitalDebtNo"/>
+        <result column="total_term" jdbcType="INTEGER" property="totalTerm"/>
+        <result column="loan_usage" jdbcType="VARCHAR" property="loanUsage"/>
+        <result column="year_rate" jdbcType="DECIMAL" property="yearRate"/>
+        <result column="month_rate" jdbcType="DECIMAL" property="monthRate"/>
+        <result column="day_rate" jdbcType="DECIMAL" property="dayRate"/>
+        <result column="ovd_year_rate" jdbcType="DECIMAL" property="ovdYearRate"/>
+        <result column="ovd_month_rate" jdbcType="DECIMAL" property="ovdMonthRate"/>
+        <result column="ovd_day_rate" jdbcType="DECIMAL" property="ovdDayRate"/>
+        <result column="grace_type" jdbcType="VARCHAR" property="graceType"/>
+        <result column="grace_day" jdbcType="INTEGER" property="graceDay"/>
+        <result column="int_calc_type" jdbcType="VARCHAR" property="intCalcType"/>
+        <result column="prin_amt" jdbcType="BIGINT" property="prinAmt"/>
+        <result column="total_int_amt" jdbcType="INTEGER" property="totalIntAmt"/>
+        <result column="int_amt" jdbcType="BIGINT" property="intAmt"/>
+        <result column="grace_int_amt" jdbcType="BIGINT" property="graceIntAmt"/>
+        <result column="ovd_prin_int_amt" jdbcType="BIGINT" property="ovdPrinIntAmt"/>
+        <result column="paid_prin_amt" jdbcType="BIGINT" property="paidPrinAmt"/>
+        <result column="paid_int_amt" jdbcType="BIGINT" property="paidIntAmt"/>
+        <result column="paid_grace_int_amt" jdbcType="BIGINT" property="paidGraceIntAmt"/>
+        <result column="paid_ovd_prin_int_amt" jdbcType="BIGINT" property="paidOvdPrinIntAmt"/>
+        <result column="total_amt" jdbcType="BIGINT" property="totalAmt"/>
+        <result column="total_paid_amt" jdbcType="BIGINT" property="totalPaidAmt"/>
+        <result column="total_exempt_amt" jdbcType="BIGINT" property="totalExemptAmt"/>
+        <result column="ovd_day" jdbcType="INTEGER" property="ovdDay"/>
+        <result column="asset_status" jdbcType="VARCHAR" property="assetStatus"/>
+        <result column="asset_class" jdbcType="VARCHAR" property="assetClass"/>
+        <result column="ovd_status" jdbcType="VARCHAR" property="ovdStatus"/>
+        <result column="accrued_status" jdbcType="VARCHAR" property="accruedStatus"/>
+        <result column="start_date" jdbcType="DATE" property="startDate"/>
+        <result column="end_date" jdbcType="DATE" property="endDate"/>
+        <result column="apply_time" jdbcType="TIMESTAMP" property="applyTime"/>
+        <result column="actual_loan_time" jdbcType="TIMESTAMP" property="actualLoanTime"/>
+        <result column="payoff_time" jdbcType="TIMESTAMP" property="payoffTime"/>
+        <result column="call_back_url" jdbcType="VARCHAR" property="callBackUrl"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        asset_id, asset_no, borrower, repayer, project_code, from_system, product_no, contract_no,
+        capital_debt_no, total_term, loan_usage, year_rate, month_rate, day_rate, ovd_year_rate,
+        ovd_month_rate, ovd_day_rate, grace_type, grace_day, int_calc_type, prin_amt, total_int_amt,
+        int_amt, grace_int_amt, ovd_prin_int_amt, paid_prin_amt, paid_int_amt, paid_grace_int_amt,
+        paid_ovd_prin_int_amt, total_amt, total_paid_amt, total_exempt_amt, ovd_day, asset_status,
+        asset_class, ovd_status, accrued_status, start_date, end_date, apply_time, actual_loan_time,
+        payoff_time, call_back_url, create_time, create_by, update_time, update_by
+    </sql>
+</mapper>

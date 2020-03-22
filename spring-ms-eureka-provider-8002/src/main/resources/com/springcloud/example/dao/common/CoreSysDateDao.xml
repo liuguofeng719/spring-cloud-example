@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springcloud.example.dao.common.CoreSysDateDao">
+    <resultMap id="BaseResultMap" type="com.springcloud.example.entity.CoreSysDate">
+        <!--@mbg.generated-->
+        <!--@Table core_sys_date-->
+        <id column="oid" jdbcType="BIGINT" property="oid"/>
+        <result column="project_code" jdbcType="VARCHAR" property="projectCode"/>
+        <result column="core_sys_date" jdbcType="DATE" property="coreSysDate"/>
+        <result column="core_sys_status" jdbcType="VARCHAR" property="coreSysStatus"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        oid, project_code, core_sys_date, core_sys_status, create_by, create_time, update_by,
+        update_time
+    </sql>
+</mapper>
